@@ -1,13 +1,14 @@
 package DAO;
 
 import Usuario.Paciente;
+import Usuario.Tarefa;
 import java.sql.Connection;
 import java.sql.PreparedStatement; 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DAOTarefas {
-    public void inserir() {
+    public void inserir(Tarefa t) {
 //1: Definir o comando SQL
         String sql = "INSERT INTO tb_paciente (nome, email) VALUES (?, ?, ?)";
 //2: Abrir uma conexão
@@ -74,11 +75,3 @@ public class DAOTarefas {
        
             }
 }
-
-
-
-
-
-
-
-
